@@ -8,4 +8,73 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Public Sans", sans-serif; */
+}
+
+/* Common */
+.container {
+  width: 1140px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 173px;
+  height: 57px;
+  line-height: 55px;
+  border-radius: 40px;
+  border: 1.5px solid #143c3c;
+  text-align: center;
+  background: #143c3c;
+  font-family: "Public Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* =====Header===== */
+.header {
+  padding: 28px 0;
+  font-family: "Public Sans";
+}
+
+.header.fixed {
+  position: sticky;
+  top: -20px;
+  padding-bottom: 8px;
+  z-index: 999;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  column-gap: 38px;
+  margin-left: auto;
+  margin-right: 88px;
+}
+
+.header__list-link {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.56;
+  color: #575d5e;
+}
+
+.header__list-link:hover {
+  color: #152427;
 }
