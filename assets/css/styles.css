@@ -82,7 +82,7 @@ a {
 
 /* =====Hero===== */
 .hero {
-  padding-top: 5px;
+  padding: 5px 0 88px;
 }
 
 .hero-separate {
@@ -250,4 +250,18 @@ a {
   left: 500px;
   transform: rotate(175.95deg);
   z-index: 1;
+}
+
+/* =====HyperLink===== */
+.hyperlink {
+  margin-top: 43px;
+}
+
+.hyperlink-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 78px 121px;
+  border-radius: 100.5px;
+  background: #e2eddf;
 }
