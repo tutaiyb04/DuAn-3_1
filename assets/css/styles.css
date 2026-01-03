@@ -311,6 +311,37 @@ a {
   margin-top: 43px;
 }
 
+.hyperlink-logo__google {
+  font-size: 3.1rem;
+  font-weight: 500;
+  color: var(--Primary-color-black-green, #143c3c);
+}
+
+.hyperlink-logo__riotinto {
+  font-family: "Sonsie One", system-ui;
+  font-size: 2.3rem;
+  color: var(--Primary-color-black-green, #143c3c);
+}
+
+.hyperlink-logo__heroku {
+  margin-left: 14px;
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 1.995px;
+  color: var(--Primary-color-black-green, #143c3c);
+}
+
+.hyperlink-logo__flex {
+  display: flex;
+  align-items: center;
+}
+
+.hyperlink-logo__flex-slack {
+  color: var(--Primary-color-black-green, #143c3c);
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
 .hyperlink-logo {
   display: flex;
   align-items: center;
@@ -323,7 +354,7 @@ a {
 /* ====Services==== */
 .services {
   margin-top: 53px;
-  padding: 53px 0 79px;
+  padding: 53px 0 49px;
 }
 
 /* Service title */
@@ -426,7 +457,7 @@ a {
 
 /* ====About==== */
 .about {
-  margin: 70px 0 79px;
+  padding: 70px 0 100px;
 }
 
 /* Icon */
@@ -753,4 +784,86 @@ a {
 
 .process-item:nth-of-type(3) .process-item__desc {
   margin-left: 233px;
+}
+
+/* ====Video==== */
+.video {
+  margin-top: 74px;
+  padding: 116px 0 63px;
+  background: var(--Primary-color-black-green, #143c3c);
+}
+
+.video__inner {
+  position: relative;
+}
+
+.video__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video__heading {
+  margin-top: 0;
+  width: 457px;
+  color: #e7f9f9;
+}
+
+.video-desc {
+  width: 590px;
+}
+
+.video-desc__description {
+  width: 520px;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.56; /* 155.556% */
+  color: var(--Scondery-color-gray, #6a8383);
+}
+
+.video-desc__cta {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  padding: 9px 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.56; /* 155.556% */
+  color: #fff;
+}
+
+.video-desc__img {
+  margin-left: 24px;
+}
+
+.video__container {
+  margin-top: 65px;
+}
+
+.video__container-clip {
+  display: block;
+  width: 1140px;
+  height: 544px;
+  border-radius: 22px;
+  object-fit: cover;
+  margin: 0 auto;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.video__icon-vector {
+  position: absolute;
+  right: -152px;
+  top: 47px;
+  width: 542px;
+  height: 361px;
+  z-index: 1;
+}
+
+.video__icon-union {
+  position: absolute;
+  top: 100px;
+  right: -52px;
+  transform: rotate(176.985deg);
 }
