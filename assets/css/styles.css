@@ -314,13 +314,13 @@ a {
 .hyperlink-logo__google {
   font-size: 3.1rem;
   font-weight: 500;
-  color: var(--Primary-color-black-green, #143c3c);
+  color: var(--Primary-color-black-green, var(--primary-color));
 }
 
 .hyperlink-logo__riotinto {
   font-family: "Sonsie One", system-ui;
   font-size: 2.3rem;
-  color: var(--Primary-color-black-green, #143c3c);
+  color: var(--Primary-color-black-green, var(--primary-color));
 }
 
 .hyperlink-logo__heroku {
@@ -328,7 +328,7 @@ a {
   font-size: 1.9rem;
   font-weight: 600;
   letter-spacing: 1.995px;
-  color: var(--Primary-color-black-green, #143c3c);
+  color: var(--Primary-color-black-green, var(--primary-color));
 }
 
 .hyperlink-logo__flex {
@@ -337,7 +337,7 @@ a {
 }
 
 .hyperlink-logo__flex-slack {
-  color: var(--Primary-color-black-green, #143c3c);
+  color: var(--Primary-color-black-green, var(--primary-color));
   font-size: 3.2rem;
   font-weight: 600;
 }
@@ -866,4 +866,76 @@ a {
   top: 100px;
   right: -52px;
   transform: rotate(176.985deg);
+}
+
+/* ====Feature==== */
+.feature {
+  margin-top: 70px;
+  padding: 70px 0;
+}
+
+.feature__title {
+  text-align: center;
+}
+
+.feature__heading {
+  margin: 0 auto;
+  width: 520px;
+}
+
+.feature__desc {
+  margin: 20px auto 0;
+  width: 547px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63; /* 162.5% */
+  color: var(--text-color-light-gray, #7d8188);
+}
+
+/* Feature list */
+.faeture__list {
+  margin-top: 103px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 45px;
+}
+
+.feature__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 362px;
+  border-radius: 160px;
+  border: 1.5px solid #cecece;
+  transition: 0.25s;
+  outline: none;
+  background: transparent;
+}
+
+.feature__item:hover {
+  border: none;
+  box-shadow: 0 36px 100px 0 rgba(111, 120, 111, 0.2);
+  background: #fff;
+  transform: translateY(-59px);
+  cursor: pointer;
+}
+
+.feature__item-heading {
+  margin-top: 26px;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+  color: var(--second-color);
+}
+
+.feature__item-desc {
+  margin-top: 9px;
+  width: 286px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.71; /* 171.429% */
+  text-align: center;
+  color: var(--text-color-light-gray, #7d8188);
 }
