@@ -939,3 +939,132 @@ a {
   text-align: center;
   color: var(--text-color-light-gray, #7d8188);
 }
+
+/* ====Blog==== */
+.blog {
+  margin-top: 57px;
+  padding: 57px 0;
+}
+
+.blog__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.blog__heading {
+  position: relative;
+  margin-top: 10px;
+  width: 520px;
+}
+
+.blog__heading::after {
+  position: absolute;
+  top: 84px;
+  left: 489px;
+  display: inline-block;
+  content: "";
+  width: 82px;
+  height: 3px;
+  background: var(--second-color);
+}
+
+.blog__desc {
+  width: 409px;
+  padding-bottom: 15px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.63; /* 162.5% */
+  color: var(--text-color-light-gray, #7d8188);
+}
+
+/* Blog list */
+.blog__list {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+.blog__item {
+  width: 360px;
+  border-radius: 40px 40px 20px 20px;
+  background: transparent;
+  transition: 0.25s;
+  overflow: hidden;
+}
+
+.blog__item:hover {
+  background: var(--text-color-white, #fff);
+  box-shadow: 0 12px 74px 0 rgba(91, 91, 91, 0.25);
+}
+
+.blog__item:hover .blog__content {
+  padding: 26px 30px 12px;
+}
+
+.blog__item:hover .blog__img {
+  transform: scale(1.2);
+}
+
+.blog__image {
+  overflow: hidden;
+}
+
+.blog__img {
+  display: inline-block;
+  width: 100%;
+  height: 317px;
+  object-fit: cover;
+  border-radius: 40px 40px 0 0;
+  background: lightgray 50% / cover no-repeat;
+  transition: 0.25s;
+}
+
+.blog__content {
+  padding: 26px 14px 12px 0;
+  transition: 0.25s;
+}
+
+.blog__content-cta {
+  display: inline-block;
+  min-width: 107px;
+  height: 26px;
+  border-radius: 20px;
+  background: var(--Scondery-color-light-green, #e2eddf);
+  color: #000;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 26px;
+  transition: 0.25s;
+}
+
+.blog__content-cta:hover {
+  background: var(--primary-color);
+  color: var(--Scondery-color-light-green, #e2eddf);
+}
+
+.blog__content-heading {
+  margin-top: 13px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+  color: var(--primary-color);
+}
+
+.blog__content-seprate {
+  margin-top: 38px;
+  width: 100%;
+  height: 1px;
+  background: #c4c4c4;
+}
+
+.blog__content-date {
+  margin-top: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  text-align: end;
+  color: var(--text-color-black-gray, #575d5e);
+}
