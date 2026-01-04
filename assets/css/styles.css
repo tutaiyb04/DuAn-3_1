@@ -418,6 +418,9 @@ a {
 .services__item {
   transition: 0.25s;
   background: #fff;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: transparent;
 }
 
 .services__item:hover {
@@ -426,15 +429,29 @@ a {
   box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
 }
 
-.services__image {
+.services__item:hover .services__content {
+  padding: 24px 12px 23px;
+}
+
+.services__item:hover .services__img {
+  transform: scale(1.1);
+}
+
+.services__iamge {
+  overflow: hidden;
+}
+
+.services__img {
   width: 100%;
   height: 318px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
+  transition: 0.25s;
 }
 
 .services__content {
-  padding: 24px 18px;
+  padding: 24px 0 23px;
+  transition: 0.25s;
 }
 
 .services__head a {
