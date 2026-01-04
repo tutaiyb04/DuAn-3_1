@@ -1005,6 +1005,7 @@ a {
 
 .blog__item {
   width: 360px;
+  height: 550px;
   border-radius: 40px 40px 20px 20px;
   background: transparent;
   transition: 0.25s;
@@ -1084,4 +1085,122 @@ a {
   line-height: 1.2; /* 120% */
   text-align: end;
   color: var(--text-color-black-gray, #575d5e);
+}
+
+/* ====Footer==== */
+.footer {
+  margin-top: 45px;
+  padding: 72px 0 50px;
+  background-color: var(--primary-color);
+}
+
+.footer__inner {
+  display: flex;
+}
+
+.footer__left {
+  width: 59%;
+}
+
+.footer__heading {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: var(--text-color-white, #fff);
+}
+
+.footer-form {
+  margin-top: 25px;
+  display: flex;
+}
+
+.footer-form__input {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+  color: var(--Scondery-color-gray, #6a8383);
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.footer-form__submit {
+  margin: 10px 0 0 11px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.footer-form__submit:hover {
+  cursor: pointer;
+}
+
+.footer__separate {
+  margin-top: 32px;
+  width: 354px;
+  height: 1px;
+  background: var(--Scondery-color-gray, #6a8383);
+}
+
+.footer-icon {
+  margin-top: 47px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.footer-icon__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #6a8383;
+  background-color: transparent;
+  transition: 0.25s;
+}
+
+.footer-icon__img:hover {
+  border-color: #a75325;
+  background-color: #a75325;
+}
+
+.footer__right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 45px;
+}
+
+.footer-list__head {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.56; /* 155.556% */
+  color: var(--text-color-white, #fff);
+}
+
+.footer-list__item {
+  margin-top: 10px;
+}
+
+.footer-list__link {
+  padding: 5px 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.25; /* 225% */
+  color: var(--Scondery-color-gray, #6a8383);
+  word-break: nowrap;
+}
+
+.footer__line-end {
+  margin-top: 45px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    #143c3c 2.28%,
+    #295a5a 55.65%,
+    rgba(38, 82, 82, 0) 102.06%
+  );
 }
